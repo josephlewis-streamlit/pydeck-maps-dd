@@ -153,7 +153,7 @@ else:
 
     # set up the tool tip
     tooltip = {
-   "html": "<b>{address_line_1},</b> <br/> {address_line_2}, <br/> {city}, <br/> {zip}",
+   "html": "<b>{address_line_1},</b> <br/> {city}, <br/> {zip}",
    "style": {
         "backgroundColor": "#e11383",
         "color": "#f5821f"
