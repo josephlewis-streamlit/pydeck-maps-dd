@@ -152,10 +152,16 @@ else:
     )
 
     # set up the tool tip
-    tooltip = {""}
+    tooltip = {
+   "html": "<b>{address_line_1},</b> <br/> {address_line_2}, <br/> {city}, <br/> {zip}",
+   "style": {
+        "backgroundColor": "#e11383",
+        "color": "#f5821f"
+        }
+    }
 
     # compile the map 
-    r = pdk.Deck(layers=[icon_layer], initial_view_state=view, tooltip={"text": "One"})
+    r = pdk.Deck(layers=[icon_layer], initial_view_state=view, tooltip=tooltip)
 
     # set up the chart 
     st.pydeck_chart(r)
